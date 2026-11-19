@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mock Location Test Helper"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Target Area (Specific Location)"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <EditText
+            android:id="@+id/etTargetLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Latitude (e.g. 25.3210)"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="25.3210"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etTargetLng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Longitude (e.g. 82.9850)"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="82.9850"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Allowed City Check"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:id="@+id/etCityLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City Center Latitude (e.g. 25.3176)"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="25.3176"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etCityLng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City Center Longitude (e.g. 82.9739)"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="82.9739"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etRadiusKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allowed Radius in KM (e.g. 15)"
+            android:inputType="numberDecimal"
+            android:text="15"
+            android:layout_marginTop="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnStartMock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Mock"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnStopMock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop Mock"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Idle"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
